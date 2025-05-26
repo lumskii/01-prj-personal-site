@@ -1,11 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Personal Site</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio – Mike Sho</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-  <!-- Add your HTML content here -->
+
+<!-- =============== HEADER =============== -->
+<header class="header">
+  <div class="container header__inner">
+    <h1 class="logo">Portfolio</h1>
+
+    <nav class="nav" id="nav">
+      <a href="#hero">Home</a>
+      <a href="#bio">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="themeToggle" aria-label="Toggle dark mode" class="toggle">
+      <svg data-lucide="sun" class="icon-sun"></svg>
+      <svg data-lucide="moon" class="icon-moon"></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- =============== HERO =============== -->
+<section id="hero" class="hero">
+  <div class="shapes">
+    <span class="shape shape--1"></span>
+    <span class="shape shape--2"></span>
+    <span class="shape shape--3"></span>
+    <span class="shape shape--4"></span>
+    <span class="shape shape--5"></span>
+    <span class="shape shape--6"></span>
+    <span class="line line--1"></span>
+    <span class="line line--2"></span>
+  </div>
+
+  <div class="hero__content container">
+    <div class="avatar">OS</div>
+    <h2 class="hero__title">Olu Sho</h2>
+    <p class="hero__subtitle">Web Developer &amp; Creative Problem Solver</p>
+    <p class="hero__text">
+      Currently pursuing web development through intensive coursework, building
+      modern applications with cutting-edge technologies and design principles.
+    </p>
+
+    <div class="socials">
+      <a href="https://github.com/lumskii" class="btn--icon" aria-label="GitHub"><svg data-lucide="github"></svg></a>
+      <a href="https://www.linkedin.com/in/olumike-sholola/" class="btn--icon linkedin" aria-label="LinkedIn"><svg data-lucide="linkedin"></svg></a>
+      <a href="olusholola2@gmail.com" class="btn--icon mail" aria-label="Mail"><svg data-lucide="mail"></svg></a>
+    </div>
+
+    <span class="arrow" id="arrowDown" tabindex="0" aria-label="Scroll to About section"><svg data-lucide="arrow-down" class="icon-arrow-down"></svg></span>
+  </div>
+</section>
+
+<!-- =============== BIO =============== -->
+<section id="bio" class="section">
+  <div class="container">
+    <h2 class="section__title">About Me</h2>
+    <div class="divider"></div>
+
+    <div class="bio__grid">
+      <img src="https://osbytes-d5279.web.app/static/media/67390011.8d01f510f1e7ab488cf6.jpeg"
+           alt="Profile" class="bio__img" />
+
+      <div class="bio__info">
+        <p>
+          I'm a passionate web developer currently enrolled in an intensive
+          web development program, where I'm building a strong foundation in
+          modern technologies and best practices.
+        </p>
+        <p>
+          My approach combines technical precision with creative problem-solving,
+          always focusing on user experience and clean, maintainable code.
+        </p>
+
+        <div class="bio__cards">
+          <div class="card">
+            <svg data-lucide="graduation-cap" class="card__icon"></svg>
+            <div>
+              <h3>Education</h3>
+              <p>Web Development Intensive Course</p>
+            </div>
+          </div>
+          <div class="card">
+            <svg data-lucide="code" class="card__icon"></svg>
+            <div>
+              <h3>Focus</h3>
+              <p>Full-Stack Web Development</p>
+            </div>
+          </div>
+          <div class="card">
+            <svg data-lucide="target" class="card__icon"></svg>
+            <div>
+              <h3>Goal</h3>
+              <p>Building impactful web applications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============== SKILLS =============== -->
+<section id="skills" class="section section--alt">
+  <div class="container">
+    <h2 class="section__title">Skills &amp; Technologies</h2>
+    <div class="divider"></div>
+    <p class="section__lead">
+      Currently developing proficiency in modern web technologies through
+      hands-on projects and coursework.
+    </p>
+
+    <div class="skills__grid">
+      <!-- Frontend -->
+      <div class="skills__card">
+        <h3 class="skills__card-title">Frontend</h3>
+        <ul>
+          <li><span>HTML5</span><span>90%</span><span class="bar" style="--w:90%"></span></li>
+          <li><span>CSS3</span><span>85%</span><span class="bar" style="--w:85%"></span></li>
+          <li><span>JavaScript</span><span>80%</span><span class="bar" style="--w:80%"></span></li>
+          <li><span>React</span><span>75%</span><span class="bar" style="--w:75%"></span></li>
+          <li><span>Tailwind CSS</span><span>85%</span><span class="bar" style="--w:85%"></span></li>
+        </ul>
+      </div>
+
+      <!-- Backend -->
+      <div class="skills__card">
+        <h3 class="skills__card-title">Backend</h3>
+        <ul>
+          <li><span>Node.js</span><span>70%</span><span class="bar" style="--w:70%"></span></li>
+          <li><span>Express</span><span>65%</span><span class="bar" style="--w:65%"></span></li>
+          <li><span>MongoDB</span><span>60%</span><span class="bar" style="--w:60%"></span></li>
+          <li><span>PostgreSQL</span><span>55%</span><span class="bar" style="--w:55%"></span></li>
+        </ul>
+      </div>
+
+      <!-- Tools -->
+      <div class="skills__card">
+        <h3 class="skills__card-title">Tools &amp; Others</h3>
+        <ul>
+          <li><span>Git</span><span>80%</span><span class="bar" style="--w:80%"></span></li>
+          <li><span>VS Code</span><span>90%</span><span class="bar" style="--w:90%"></span></li>
+          <li><span>Figma</span><span>70%</span><span class="bar" style="--w:70%"></span></li>
+          <li><span>Responsive Design</span><span>85%</span><span class="bar" style="--w:85%"></span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="skills__foot">
+      Always learning and expanding my skill set through new projects and challenges.
+    </p>
+  </div>
+</section>
+
+<!-- =============== CONTACT =============== -->
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section__title">Get in Touch</h2>
+    <div class="divider"></div>
+    <p class="section__lead">
+      Interested in collaboration? Let's connect and discuss your project.
+    </p>
+
+    <div class="contact__grid">
+      <div class="contact__info">
+        <div class="card">
+          <svg data-lucide="mail" class="card__icon"></svg>
+          <div><h3>Email</h3><p>olusholola2@gmail.com</p></div>
+        </div>
+        <div class="card">
+          <svg data-lucide="phone" class="card__icon"></svg>
+          <div><h3>Phone</h3><p>+1 (480) 546-0398</p></div>
+        </div>
+        <div class="card">
+          <svg data-lucide="map-pin" class="card__icon"></svg>
+          <div><h3>Location</h3><p>Phoenix, AZ</p></div>
+        </div>
+      </div>
+
+      <form class="contact__form">
+        <label>Name<input type="text" placeholder="Your name" /></label>
+        <label>Email<input type="email" placeholder="you@example.com" /></label>
+        <label>Message<textarea rows="4" placeholder="Your message..."></textarea></label>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- =============== FOOTER =============== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__socials">
+      <a href="#" aria-label="GitHub"><svg data-lucide="github"></svg></a>
+      <a href="#" aria-label="LinkedIn"><svg data-lucide="linkedin"></svg></a>
+      <a href="#" aria-label="Twitter"><svg data-lucide="twitter"></svg></a>
+    </div>
+    <p>&copy; <span id="year"></span> Olu Sho. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+lucide.createIcons();
+// Add smooth scroll to About section when arrow is clicked
+const arrow = document.getElementById('arrowDown');
+if (arrow) {
+  arrow.addEventListener('click', function() {
+    const aboutSection = document.getElementById('bio');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+  // Also allow keyboard accessibility
+  arrow.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      const aboutSection = document.getElementById('bio');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+}
+</script>
 </body>
 </html>
